@@ -3,10 +3,20 @@
     package="com.cedrus.student"
     android:versionCode="1"
     android:versionName="1.0" >
-
+   
+    
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    
+    
 
     <application
         android:allowBackup="true"
@@ -14,7 +24,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.cedrus.student.MainActivity"
+            android:name="com.student.view.LoginActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,5 +33,10 @@
             </intent-filter>
         </activity>
     </application>
+    
+    
+     
+    
+  
 
 </manifest>

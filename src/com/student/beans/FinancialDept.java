@@ -1,18 +1,21 @@
-package com.cedus.beans;
+package com.student.beans;
+
+import cn.bmob.v3.BmobObject;
 
 /**
  * 财务处
+ * 
  * @author Cedrus
- *
+ * 
  */
-public class FinancialDept extends BmobObject{
-	
-	private String deptName;//部门名称
-	private int deptNo;//部门编号
+public class FinancialDept extends BmobObject {
+
+	private String deptName = "";// 部门名称
+	private String deptNo = "";// 部门编号
 	private String deptIntroduction;
-	private int moneyNeed;//应交钱
-	private int moneyHanded;//已交钱
-	private int moneyowe;//还差的钱
+	private int moneyNeed = 0;// 应交钱
+	private int moneyHanded = 0;// 已交钱
+	private int moneyowe = 0;// 还差的钱
 
 	public String getDeptName() {
 		return deptName;
@@ -22,11 +25,11 @@ public class FinancialDept extends BmobObject{
 		this.deptName = deptName;
 	}
 
-	public int getDeptNo() {
+	public String getDeptNo() {
 		return deptNo;
 	}
 
-	public void setDeptNo(int deptNo) {
+	public void setDeptNo(String deptNo) {
 		this.deptNo = deptNo;
 	}
 
@@ -61,7 +64,5 @@ public class FinancialDept extends BmobObject{
 	public void setMoneyowe(int moneyowe) {
 		this.moneyowe = moneyowe;
 	}
-
-
 
 }

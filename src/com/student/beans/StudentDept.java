@@ -1,15 +1,17 @@
-package com.cedus.beans;
+package com.student.beans;
 
+import cn.bmob.v3.BmobObject;
 
 /**
  * 学生处
+ * 
  * @author Cedrus
- *
+ * 
  */
-public class StudentDept extends BmobObject{
-	private String deptName;// 部门名称
-	private int deptNo;// 部门编号
-	private String deptIntroduction;
+public class StudentDept extends BmobObject {
+	private String deptName = "";// 部门名称
+	private String deptNo = "";// 部门编号
+	private String deptIntroduction = "";
 
 	public String getDeptName() {
 		return deptName;
@@ -19,11 +21,11 @@ public class StudentDept extends BmobObject{
 		this.deptName = deptName;
 	}
 
-	public int getDeptNo() {
+	public String getDeptNo() {
 		return deptNo;
 	}
 
-	public void setDeptNo(int deptNo) {
+	public void setDeptNo(String deptNo) {
 		this.deptNo = deptNo;
 	}
 
@@ -35,5 +37,4 @@ public class StudentDept extends BmobObject{
 		this.deptIntroduction = deptIntroduction;
 	}
 
-	
 }

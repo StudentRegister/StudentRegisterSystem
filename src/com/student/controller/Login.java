@@ -1,4 +1,6 @@
-package com.cedrus.controller;
+package com.student.controller;
+
+import cn.bmob.v3.Bmob;
 
 /**
  * µÇÂ½
@@ -7,7 +9,7 @@ package com.cedrus.controller;
  */
 
 public class Login{
-	
+
 	
 	
 
